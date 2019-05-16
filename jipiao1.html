@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./CSS/demo.css">
+
+    <script>
+        window.onload = function (ev) {
+            var banner = document.querySelectorAll(".banner");
+            var btns = document.querySelectorAll(".btn");
+            var num=0;
+            setInterval(function () {
+                num++;
+
+                if(num==2){
+                    num=0;
+                }
+                for (var i = 0; i < banner.length; i++) {
+                    console.log(banner[i]);
+                    console.log(btns[i]);
+                    banner[i].style.display="none";
+                    btns[i].style.background="black";
+                }
+                // console.log(num);
+                banner[num].style.display="block";
+                btns[num].style.background="orange";
+            },3000)
+
+        }
+    </script>
+
+<!--头标签-->
+</head>
+<body>
+<!--头部-->
+    <header>
+        <div class="main-warp"></div>
+        <a href=""><img src="./imgs/mh.png" alt=""></a>
+    </header>
+<!--开头-->
+    <div class="box">
+        <div class="con">
+            <div class="left">
+                <a href="" class="action">首页</a>
+                <a href="">国内机票</a>
+                <a href="">国际机票</a>
+                <a href="">明航咨询</a>
+                <a href="">明航问答</a>
+            </div>
+            <div class="right">
+                <a href="" class="user" >登录</a>
+                <a href="">注册</a>
+                <a href="">用户中心 </a>
+                <div class="sanjiao"></div>
+            </div>
+        </div>
+    </div>
+<!---热门城市-->
+<div class="hot">
+    <span>热门城市：</span>
+    <a href="">深圳</a>
+    <a href="">北京</a>
+    <a href="">上海</a>
+    <a href="">广州</a>
+    <a href="">南京</a>
+    <a href="">天津</a>
+    <a href="">武汉</a>
+    <a href="">长沙</a>
+    <a href="">昆明</a>
+    <a href="">贵阳</a>
+    <a href="">成都</a>
+    <a href="">重庆</a>
+    <a href="">海口</a>
+    <a href="">哈尔滨</a>
+    <a href="">更多</a>
+</div>
+
+<!--轮播图-->
+<div class="wheel-box">
+    <div class="banner banner1"></div>
+    <div class="banner banner2"></div>
+    <div class="btns">
+        <div class="btn btn1"></div>
+        <div class="btn btn2"></div>
+    </div>
+</div>
+
+<!--热门航线预定-->
+<div class="hothangxian">
+    <div class="left">
+        <p>热门航线预定</p>
+    </div>
+    <div class="right">
+        <a href="" class="quanguo">全国</a>
+        <a href="">深圳</a>
+        <a href="">北京</a>
+        <a href="">上海</a>
+        <a href="">广州</a>
+        <a href="">武汉</a>
+        <a href="">成都</a>
+        <a href="">海口</a>
+        <a href="">重庆</a>
+        <a href="">沈阳</a>
+    </div>
+</div>
+<div class="hangxians">
+    <div class="hangxian">
+        海口→郑州 <br>
+        12月16日 <br>
+        票价：150
+    </div>
+    <div class="hangxian">
+        海口→郑州<br>
+        12月16日<br>
+        票价：150
+    </div>
+    <div class="hangxian">
+        海口→郑州<br>
+        12月16日<br>
+        票价：150
+    </div>
+    <div class="hangxian">
+        海口→郑州<br>
+        12月16日<br>
+        票价：150
+    </div>
+    <div class="hangxian">
+        海口→郑州<br>
+        12月16日<br>
+        票价：150
+    </div>
+    <div class="hangxian">
+        海口→郑州<br>
+        12月16日<br>
+        票价：150
+    </div>
+    <div class="hangxian">
+        海口→郑州<br>
+        12月16日<br>
+        票价：150
+    </div>
+    <div class="hangxian">
+        海口→郑州<br>
+        12月16日<br>
+        票价：150
+    </div>
+    <div class="hangxian">
+        海口→郑州<br>
+        2月16日<br>
+        票价：150
+    </div>
+    <div class="hangxian">
+        海口→郑州<br>
+        date">12月16日<br>
+        票价：150
+    </div>
+
+</div>
+</body>
+</html>
